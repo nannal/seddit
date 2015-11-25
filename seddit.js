@@ -7,7 +7,7 @@ Template.body.helpers({
     }
   });
   Template.submit.events({
-    'submit .submit': function () {
+    'submit .submit': function (event) {
       event.preventDefault();
       var title = event.target.title.value;
       var url = event.target.url.value;
